@@ -1,9 +1,10 @@
+import DetailsForm from "./pages/DetailsForm";
 
 
 function App() {
   return (
     <div className="App">
-      it works
+      <DetailsForm/>
     </div>
   );
 }

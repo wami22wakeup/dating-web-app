@@ -1,0 +1,148 @@
+/* ----Interest Buble--- */
+.interest-bubble {
+    width: fit-content;
+    padding: 8px 15px;
+    padding-right: 10px;
+    background-color: rgb(216, 212, 212);
+    color: black;
+    border-radius: 15px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.interest-bubble span {
+    padding-left: 5px;
+    margin-left: 5px;
+    font-size: large;
+    /* border-left: 1px solid gray; */
+    cursor: pointer;
+}
+
+.interests-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* .onboarding {
+    border-top: solid 1px rgb(213, 213, 213);
+} */
+
+.onboarding form {
+    display: flex;
+    justify-content: center;
+}
+
+.onboarding form section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 35%;
+    text-align: start;
+}
+
+.onboarding form input,
+.onboarding form textarea {
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 15px;
+    border: solid 2px rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+.onboarding form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.onboarding form label {
+    margin: 10px 0;
+}
+
+.onboarding form .multiple-input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.onboarding form input::-webkit-outer-spin-button,
+.onboarding form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.onboarding form .multiple-input-container input {
+    margin-right: 10px;
+}
+
+.onboarding form .multiple-input-container label {
+    padding: 10px;
+    border: solid 2px rgb(144, 144, 144);
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+.onboarding form input[type=radio] {
+    display: none;
+}
+
+.onboarding form input[type=number] {
+    width: 10%;
+}
+
+.onboarding form input[type=radio]:checked+label {
+    border: solid 2px rgb(221, 39, 22);
+}
+
+.onboarding form input[type=submit]:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.onboarding form input[type=submit]:active {
+    background-color: rgb(226, 115, 115);
+}
+
+.onboarding form .photo-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.onboarding form section .image-upload {
+    border: solid 2px black;
+    /* border: solid 2px rgb(219, 219, 219); */
+    cursor: pointer;
+    border-radius: 20px;
+    /* width: 100%; */
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.onboarding form section .image-upload span {
+    /* color: rgb(219, 219, 219); */
+    font-size: 5rem;
+}
+.onboarding form section .image-upload .label-text{
+    /* color: rgb(219, 219, 219); */
+    font-size: 2em;
+
+}
+
+.photo-container{
+    position: relative;
+}
+.photo-container span{
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: white;
+    scale: 1.2;
+    /* color: white; */
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    margin: -10px;
+}
