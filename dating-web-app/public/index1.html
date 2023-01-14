@@ -6,132 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRAGMA - The best dating app</title>
-    <link rel="stylesheet" href="styling.css">
+    <!-- <link rel="stylesheet" href="styling.css"> -->
     <script src="timer.js"></script>
-    <link rel="stylesheet" href="utlis.css">
+    <!-- <link rel="stylesheet" href="utlis.css"> -->
 </head>
+
 <body>
-    <p style="background-image: url('dating.jpg');"></p>
+    <!-- <p>image</p> -->
     <script src="form.js"></script>
     <div class="full-page">
-        <div class="navbar">
-           
-            <nav>
-               <ul id="Menu Items">
-                   <!-- <li><a href="#"> Home </a></li>
-                    <li><a href="#"> About </a></li>
-                    <li><a href="#"> Services </a></li>
-                    <li><a href="#"> Contact </a></li>-->
-                    <div class=" nav-left">
-                        <img class="icon" src="icon.png" alt="">
-                        <h1 class="site-title">Pragma</h1>
-                    </div>
-                   
-                     
-                    
-                </ul>
-                <div class="nav-right">
-                    <button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
-                     style="width:auto;">Login</button>
-                 </div>
-            </nav>
-        </div>
-        <hr>
-        <div id='login-form'class='login-page'>
+        <nav class="navbar">
+            <div class=" nav-left">
+                <img class="icon" src="icon.png" alt="icon">
+                <h1 class="site-title">Pragma</h1>
+            </div>
+
+            <div class="nav-right">
+                <button class='loginbtn'>Login</button>
+            </div>
+        </nav>
+        <!-- <hr> -->
+        <!-- <div id='login-form' class='login-page'>
             <div class="form-box">
                 <div class='button-box'>
                     <div id='btn'></div>
-                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
-                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
                 </div>
                 <form id='login' class='input-group-login'>
-                    <input type='text'class='input-field'placeholder='Email Id' required >
-		    <input type='password'class='input-field'placeholder='Enter Password' required>
-		    <input type='checkbox'class='check-box'><span>Remember Password</span>
-		    <button type='submit'class='submit-btn'>Log in</button>
-		 </form>
-		     <form id='register' class='input-group-register'>
-		     <input type='text'class='input-field'placeholder='First Name' required>
-		     <input type='text'class='input-field'placeholder='Last Name ' required>
-		     <input type='email'class='input-field'placeholder='Email Id' required>
-		     <input type='password'class='input-field'placeholder='Enter Password' required>
-		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
-		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
-                 <button type='submit'class='submit-btn'>Register</button>
-	         </form>
+                    <input type='text' class='input-field' placeholder='Email Id' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span>Remember Password</span>
+                    <button type='submit' class='submit-btn'>Log in</button>
+                </form>
+                <form id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name' required>
+                    <input type='text' class='input-field' placeholder='Last Name ' required>
+                    <input type='email' class='input-field' placeholder='Email Id' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='password' class='input-field' placeholder='Confirm Password' required>
+                    <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+                </form>
             </div>
-        </div>
-        
-        <main class="min-h-screen">
-            <section class="section1">
-                <div class="flex">
-                    
-                    <div class="topleft flex flex-col justify-center px-2">
-                        
-                        <h1 class="my-1 text-center">Find your other </h1>
-                        <h1 class="my-1 text-center">half here.</h1>
-                        <p class=" text-center">we make dating fun and easy for you.
-                        </p>
-                          <p class="deal text-center">Here is your chance <span id="demo"></span></p>
-                    </div>
-                    <div class="buttons">
-                        <button class="btn"onclick="document.getElementById('login-form').style.display='block'"
-                        style="width:auto;">Create account</button>
-                        <!--<button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
-                        style="width:auto;">Create account</button>-->
-                    </div>
-                  
+        </div> -->
+
+        <section class="landing-page-screen">
+            <div class="main-screen">
+                <div>
+                    <h1>Find your other </h1>
+                    <h1>half here.</h1>
+                    <p class="small-tagline">we make dating fun and easy for you.
+                    </p>
+                    <p class="small-tagline">Here is your chance <span id="demo"></span></p>
                 </div>
-            </section>
-    
-        </main>
-      
-       
-    <!-- Hearts -->
-  
-      
-  <div id="hearts-alpaca" class="hearts">
-    <div class="heart"></div>
-    <div class="heart"></div>
-    <div class="heart"></div>
-    <div class="heart"></div>
-  </div>
+                <div class="create-button">
+                    <button class="btn">Create account</button>
+                    <!--<button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                        style="width:auto;">Create account</button>-->
+                </div>
+            </div>
+            <div class="bg-image">
+                <img src="./dating.png" alt="bg-image">
+            </div>
+        </section>
 
-  <!-- Alpaca -->
-  
-</div>
-<script>
-    var x=document.getElementById('login');
-    var y=document.getElementById('register');
-    var z=document.getElementById('btn');
-    function register()
-    {
-        x.style.left='-400px';
-        y.style.left='50px';
-        z.style.left='100px';
-    }
-    function login()
-    {
-        x.style.left='50px';
-        y.style.left='450px';
-        z.style.left='0px';
-    }
-</script>
-<script>
-    var modal = document.getElementById('login-form');
-    window.onclick = function(event) 
-    {
-        if (event.target == modal) 
-        {
-            modal.style.display = "none";
+
+        <!-- Hearts -->
+
+
+        <div id="hearts-alpaca" class="hearts">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+
+        <!-- Alpaca -->
+
+    </div>
+    <!-- <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '100px';
         }
-    }
-</script>
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script> -->
 </body>
+
 </html>
-
-
-
-
-
-
